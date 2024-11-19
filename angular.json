@@ -24,8 +24,15 @@
             ],
             "styles": [
               "src/styles.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/scrollreveal/dist/scrollreveal.js",
+              "node_modules/swiper/swiper-bundle.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/js/script.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

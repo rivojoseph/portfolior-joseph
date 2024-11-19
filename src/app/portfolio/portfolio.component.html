@@ -1,0 +1,77 @@
+<!-- section portofolio-->
+<section class="portfolio" id="portfolio">
+  <h2 class="heading">Latest <span>Project</span></h2>
+
+  <div *ngIf="projets" class="portfolio-container">
+
+    <div class="portfolio-box" *ngFor="let p of projets,let i=index" [ngsRevealSet]="{origin:'right'}"  [ngsInterval]="100"   [ngsSelector]="'.portfolio-box'">
+        <img [src]="p.image[i].image" alt="">
+        <div class="portfolio-layer">
+          <h4>{{p.categorie}}</h4>
+          <p>{{p.titre}}</p>
+          <a (click)="onGetProject(i)" href="#" data-bs-toggle="modal" data-bs-target="#detailsModalFullscreen"><i class="bx bx-link-external"></i></a>
+        </div>
+    </div>
+
+  </div>
+
+  <app-details [project]="project"></app-details>
+</section>
+
+
+<!--  testimonial -->
+
+<div class="testimonial-container">
+  <h2 class="heading">Valuation <span>Testimonial</span></h2>
+
+  <div class="testimonial-wrapper" [ngsRevealSet]="{origin:'bottom'}"  [ngsInterval]="100"   [ngsSelector]="'.testimonial-wrapper'">
+    <div class="testimonial-box mySwiper">
+      <div class="testimonial-content swiper-wrapper">
+        <div class="testimonial-slide swiper-slide">
+          <img src="assets/images/avatar1.jpg" alt="">
+          <h3>Jackson Levi</h3>
+          <p>« Joseph a une compréhension approfondie des technologies Java et Angular.<br> Son travail sur notre projet de gestion de projet a considérablement amélioré notre efficacité »</p>
+        </div>
+        <div class="testimonial-slide swiper-slide">
+          <img src="assets/images/avatar2.jpg" alt="">
+          <h3>Robert Downturn</h3>
+          <p>"J'ai eu le plaisir de travailler avec Randrianasolomananarivo Joseph sur plusieurs projets complexes de développement fullstack.
+            <br> Joseph est un développeur fiable et talentueux, capable de transformer des idées en solutions robustes."</p>
+        </div>
+        <div class="testimonial-slide swiper-slide">
+          <img src="assets/images/avatar3.jpg" alt="">
+          <h3>Ally Sanders</h3>
+          <p>J'ai eu la chance de collaborer avec Joseph sur un projet ambitieux de développement fullstack.<br> Son engagement envers la qualité et les délais a été exemplaire.<br> Son leadership technique a été un pilier de notre succès."
+            </p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--<swiper
+  [effect]="'coverflow'"
+  [grabCursor]="true"
+  [centeredSlides]="true"
+  [slidesPerView]="'auto'"
+  [coverflowEffect]="{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      slideShadows:true
+    }"
+  [pagination]="true"
+  [navigation]="true"
+  class="swiper"
+>
+  <ng-template swiperSlide><img src="assets/images/image4.jpg" alt=""></ng-template>
+  <ng-template swiperSlide><img src="assets/images/image2.jpg" alt=""></ng-template>
+  <ng-template swiperSlide><img src="assets/images/image6.jpg" alt=""></ng-template>
+  <ng-template swiperSlide><img src="assets/images/image7.jpg" alt=""></ng-template>
+</swiper>-->

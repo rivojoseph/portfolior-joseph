@@ -1,0 +1,25 @@
+<div class="modal fade" id="servicesModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="header-m">
+        <h2 class="heading">My <span>Services</span></h2>
+      </div>
+      <div  class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="services-img" src="assets/images/illustrations/{{textParent.image}}" alt="">
+          </div>
+          <div class="col-md-6">
+            <div [innerHTML]="textParent.text">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

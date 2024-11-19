@@ -1,0 +1,19 @@
+<!--section about-->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="assets/images/about.png" alt="" [ngsRevealSet]="{origin:'left'}"  [ngsInterval]="100"   [ngsSelector]="'.about-img img'">
+  </div>
+
+  <div class="about-content" [ngsRevealSet]="{origin:'bottom'}"  [ngsInterval]="100"   [ngsSelector]="'.about-content'">
+    <h2 class="heading" [ngsRevealSet]="{origin:'top'}"  [ngsInterval]="50"   [ngsSelector]="'.heading'">About <span>Me</span></h2>
+    <h3 [ngsRevealSet]="{origin:'right'}"  [ngsInterval]="100"   [ngsSelector]="'.about-content h3'">Hi, I'm Here TO Help Your Next Project!</h3>
+    <p [ngsRevealSet]="{origin:'left'}"  [ngsInterval]="50"   [ngsSelector]="'.about-content p'">I am passionate about creating high-performance and user-friendly web applications. My extensive experience as a fullstack developer, combined with my constant desire to stay up to date with emerging technologies, makes me an ideal candidate for ambitious projects.
+
+
+    </p>
+    <a href="#" class="btn" [ngsRevealSet]="{origin:'right'}"  [ngsInterval]="100"   [ngsSelector]="'.about-content .btn'" data-bs-toggle="modal" data-bs-target="#aboutModalFullscreen">Read More</a>
+  </div>
+
+  <app-about-modal></app-about-modal>
+</section>
+

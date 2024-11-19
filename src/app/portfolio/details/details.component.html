@@ -1,0 +1,56 @@
+<div class="modal fade" id="detailsModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="header-m">
+        <h2 class="heading">Latest <span>Project</span></h2>
+      </div>
+      <div class="modal-body">
+        <div class="project-container">
+          <div class="project-box">
+            <div class="project-img slider-effect">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <ng-template ngFor let-item [ngForOf]="project.image">
+                    <div class="swiper-slide">
+                      <img [src]="item.image" alt="">
+                    </div>
+                  </ng-template>
+                  <div class="swiper-slide"><img src="assets/images/image3.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <div *ngFor="let img of project.image">
+                </div>
+                <div class="info">
+                  <h3>{{this.project.titre}}</h3>
+                  <p [innerHTML]="project.description"></p>
+                </div>
+              </div>
+              <div class="col-sm-5 meta">
+                <div class="tags">
+                  <span class="meta-heading">Tags</span>
+                  <a [href]="project.resource">Resource</a>
+                  <a [href]="project.projet">Project</a>
+                  <span class="meta-heading">Date</span>
+                  <span>{{project.date}}</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

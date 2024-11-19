@@ -1,0 +1,48 @@
+<!--home section design-->
+<section class="home" id="home">
+  <div class="home-content" [ngsRevealSet]="{origin:'top'}"  [ngsInterval]="50"   [ngsSelector]="'.home-content'">
+    <h3 [ngsRevealSet]="{origin:'right'}"  [ngsInterval]="50"   [ngsSelector]="'.home-content h3'">Hello, I am</h3>
+    <h1 [ngsRevealSet]="{origin:'left'}"  [ngsInterval]="50"   [ngsSelector]="'.home-content h1'">Rivo Joseph</h1>
+    <h3>And I'm a <span class="multiple-text"></span></h3>
+    <p [ngsRevealSet]="{origin:'left'}"  [ngsInterval]="50"   [ngsSelector]="'.home-content p'">Welcome to my portfolio ! I am a passionate developer with extensive experience in full-stack development, combining my skills in Java and Angular to create robust and innovative applications.</p>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/randrianasoloananarivojoseph"><i class="bx bxl-facebook"></i> </a>
+      <a href=""><i class="bx bxl-linkedin"></i> </a>
+      <a href="https://www.skipe.com/randrianasoloananarivo"><i class="bx bxl-skype"></i> </a>
+      <a href="https://www.whatsapp.com/randrianasoloananarivo"><i class="bx bxl-whatsapp"></i> </a>
+    </div>
+
+    <a href="#" (click)="telechagerPdf()" class="btn">Download CV</a>
+  </div>
+
+  <div class="profession-container">
+    <div class="profession-box">
+      <div class="profession" style="--i:0">
+        <i class="bx bx-code-alt"></i>
+        <h3>Web developer</h3>
+      </div>
+      <div class="profession" style="--i:1">
+        <i class="bx bx-mobile"></i>
+        <h3>Mobile developer</h3>
+      </div>
+      <div class="profession" style="--i:2">
+        <i class="bx bx-lock"></i>
+        <h3>IT Security</h3>
+      </div>
+      <div class="profession" style="--i:3">
+        <i class="bx bx-sidebar"></i>
+        <h3>Web Application</h3>
+      </div>
+
+      <div class="circle"></div>
+
+    </div>
+
+    <div class="overlay"></div>
+  </div>
+
+  <div class="home-img">
+    <img class="img-home" src="assets/images/rivo.png" alt="" [ngsRevealSet]="{origin:'bottom'}"  [ngsInterval]="50"   [ngsSelector]="'.img-home'">
+  </div>
+</section>

@@ -1,0 +1,34 @@
+<!--section service-->
+
+<section class="services" id="services">
+  <h2 class="heading">My <span>Services</span></h2>
+
+  <div class="services-container" [ngsRevealSet]="{origin:'bottom'}"  [ngsInterval]="100"   [ngsSelector]="'.services-box'">
+    <div class="services-box">
+      <i class="bx bx-code-alt"></i>
+      <h3>Full-Stack Development</h3>
+      <p>
+        Maîtrise du développement tant du côté client (frontend) que du côté serveur (backend) pour créer des applications complètes.
+        </p>
+      <a (click)="onLearnMre(0)" href="#" class="btn" data-bs-toggle="modal" data-bs-target="#servicesModalFullscreen">Read More</a>
+    </div>
+    <div class="services-box">
+      <i class="bx bx-sidebar"></i>
+      <h3>Web Development</h3>
+      <p>
+        Création d'applications web interactives et fonctionnelles en utilisant des technologies telles que HTML, CSS, JavaScript, et divers le frameworks comme Angular, Boostrap.
+      </p>
+      <a (click)="onLearnMre(1)" href="#" class="btn" data-bs-toggle="modal" data-bs-target="#servicesModalFullscreen">Read More</a>
+    </div>
+    <div class="services-box">
+      <i class="bx bx-book-bookmark"></i>
+      <h3>Formation et Tutorat</h3>
+      <p>
+        Dispensation de cours et de formations pour aider d'autres personnes à acquérir des compétences en développement.
+      </p>
+      <a (click)="onLearnMre(2)" href="#" class="btn" data-bs-toggle="modal" data-bs-target="#servicesModalFullscreen">Read More</a>
+    </div>
+  </div>
+  <app-service-modal [textParent] = "textParent"></app-service-modal>
+</section>
+

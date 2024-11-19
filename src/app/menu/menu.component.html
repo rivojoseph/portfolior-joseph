@@ -1,0 +1,16 @@
+<!--header design-->
+<header class="header">
+  <a href="#" class="logo">Portfolio.</a>
+
+  <nav class="navbar">
+    <a href="#home" [class.active]="activaSelection==='home'">Home</a>
+    <a href="#about" [class.active]="activaSelection==='about'">About</a>
+    <a href="#services" [class.active]="activaSelection==='services'">Services</a>
+    <a href="#portfolio" [class.active]="activaSelection==='portfolio'">Portfolio</a>
+    <a href="#contact" [class.active]="activaSelection==='contact'">Contacts</a>
+  </nav>
+
+  <div class="bx" [ngClass]="!active?'bx-moon':'bx-sun'" id="darkMode-icon" (click)="leigthMode()"></div>
+  <div class="bx" [ngClass]="!headen?'bx-menu':'bx-x'" id="menu-icon" (click)="stackMenu()"></div>
+
+</header>
