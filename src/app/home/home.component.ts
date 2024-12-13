@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   telechagerPdf() {
-    const pdefPath = "assets/docs/CV.pdf"
+    const pdefPath = "assets/docs/RANDRIANASOLOMANANARIVO.pdf"
     window.open(pdefPath,'__brand__');
   }
 }
